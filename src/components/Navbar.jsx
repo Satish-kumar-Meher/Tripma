@@ -7,6 +7,20 @@ const Navbar = () => {
   const navLinkClass = ({ isActive }) =>
     `hover:text-blue-600 ${isActive ? 'text-blue-600 font-semibold' : 'text-gray-600'}`;
 
+  // const user = JSON.parse(localStorage.getItem('users'))
+  // console.log(user)
+
+  let user = null;
+try {
+  const storedUser = localStorage.getItem('users');
+  if (storedUser) {
+    user = JSON.parse(storedUser);
+  }
+} catch (err) {
+  console.error("Failed to parse user from localStorage:", err);
+}
+console.log(user)
+
   return (
     <nav className="flex items-center justify-between px-6 py-4 bg-white shadow-md">
       <NavLink to="/" className="text-2xl font-bold text-blue-600">Tripma</NavLink>

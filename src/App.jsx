@@ -29,6 +29,7 @@ import PassengerInformationForm from './pages/PassengerDetails';
 import CurrentBookings from './pages/CurrBookings';
 import { Chatbot } from './pages/Chatbot';
 import About from './pages/About';
+import { Toaster } from 'react-hot-toast';
 
 const router = createBrowserRouter([
   {
@@ -80,7 +81,13 @@ const router = createBrowserRouter([
 
 
 const App = () => {
-  return <RouterProvider router={router}> </RouterProvider>;
+  return (
+    <>
+    <RouterProvider router={router}> </RouterProvider>;
+    <Toaster position="top-right" reverseOrder={false} />
+    </>
+  
+  )
 };
 
 
