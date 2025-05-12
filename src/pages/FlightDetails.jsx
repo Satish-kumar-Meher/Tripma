@@ -383,7 +383,7 @@ export default function FlightDetailsPage() {
           <FaArrowLeft className="mr-1" /> Back to Flight Schedule
         </button>}
           <h1 className="text-2xl font-bold mt-1">
-            Los Angeles <span className="text-blue-600">→</span> New York
+            Delhi <span className="text-blue-600">→</span> Bhubaneswar
           </h1>
           <p className="text-sm text-blue-700">Boeing 787 Dreamliner · 230 Passengers</p>
         </div>
@@ -415,7 +415,7 @@ export default function FlightDetailsPage() {
             <HiUser className="text-xl rounded-full bg-white border border-gray-300" />
             <span className="text-blue-600 text-sm font-semibold">+207</span>
           </div>
-          <div className="text-green-600 font-bold text-lg">$350</div>
+          <div className="text-green-600 font-bold text-lg">₹350</div>
           <button className="bg-blue-600 text-white px-4 py-2 rounded font-semibold hover:bg-blue-700"  onClick={() => navigate(`/passengerdetail/${id}`)}>Book Now</button>
         </div>
 
@@ -424,7 +424,7 @@ export default function FlightDetailsPage() {
           <div className="text-center">
             <h2 className="text-2xl font-bold text-blue-900">6:00 AM</h2>
             <p className="text-sm text-gray-600">15 Jul 2028</p>
-            <p className="text-gray-700">Los Angeles International Airport (LAX)</p>
+            <p className="text-gray-700">Delhi International Airport </p>
             <p className="text-xs text-gray-400">Terminal 8</p>
           </div>
 
@@ -449,7 +449,7 @@ export default function FlightDetailsPage() {
           <div className="text-center">
             <h2 className="text-2xl font-bold text-blue-900">9:00 PM</h2>
             <p className="text-sm text-gray-600">15 Jul 2028</p>
-            <p className="text-gray-700">John F. Kennedy International Airport (JFK)</p>
+            <p className="text-gray-700">Bhubaneswar International Airport</p>
             <p className="text-xs text-gray-400">Terminal 4</p>
           </div>
         </div>

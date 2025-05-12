@@ -124,7 +124,7 @@ function Home() {
 
   const navigate = useNavigate()
 
-  const locations = ['New York', 'Los Angeles', 'London', 'Delhi', 'Paris', 'Tokyo', 'Dubai'];
+  const locations = ['Delhi', 'Bhubaneswar', 'Kolkata', 'Hydrebad', 'Chennai', 'Amritsar', 'Mumbai'];
 
   const handleFromInput = (value) => {
     setFrom(value);
@@ -140,8 +140,8 @@ function Home() {
     <>
       <div className="min-h-screen bg-[url('/bg-map.png')] bg-no-repeat bg-cover">
         {/* <Navbar /> */}
-        <div className="flex flex-col items-center justify-center text-center mt-20 px-4">
-          <h1 className="pb-5 text-5xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400">
+        <div className="flex flex-col items-center justify-center text-center pt-20 px-4">
+          <h1 className="pb-5 text-5xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-50 to-blue-200">
             It’s more than just a trip
           </h1>
 

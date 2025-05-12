@@ -116,13 +116,13 @@
 //                 type="text"
 //                 placeholder="From"
 //                 className="border rounded px-3 py-2"
-//                 defaultValue="Los Angeles (LAX)"
+//                 defaultValue="Los Angeles (Delhi)"
 //               />
 //               <input
 //                 type="text"
 //                 placeholder="To"
 //                 className="border rounded px-3 py-2"
-//                 defaultValue="New York (JFK)"
+//                 defaultValue="New York (Bhubaneswar)"
 //               />
 //               <input
 //                 type="date"
@@ -333,8 +333,8 @@
 //     airline: 'SkyHigh Airlines',
 //     departure: '6:00 AM',
 //     arrival: '9:00 PM',
-    // from: 'LAX',
-    // to: 'JFK',
+    // from: 'Delhi',
+    // to: 'Bhubaneswar',
 //     duration: '3 hours',
 //     stops: 'Direct',
 //     price: '$350',
@@ -346,8 +346,8 @@
 //     airline: 'FlyFast Airways',
 //     departure: '8:00 AM',
 //     arrival: '11:30 AM',
-//     from: 'LAX',
-//     to: 'JFK',
+//     from: 'Delhi',
+//     to: 'Bhubaneswar',
 //     duration: '3 hr 30 m',
 //     stops: 'Direct',
 //     price: '$400',
@@ -457,8 +457,8 @@ import { useNavigate } from "react-router-dom";
 
 export default function FlightSchedule() {
   const [date, setDate] = useState("2028-07-01");
-  const [fromLocation, setFromLocation] = useState("Los Angeles (LAX)");
-  const [toLocation, setToLocation] = useState("New York (JFK)");
+  const [fromLocation, setFromLocation] = useState("Delhi");
+  const [toLocation, setToLocation] = useState("Bhubaneswar");
 const navigate = useNavigate()
   const flights = [
     {
@@ -466,8 +466,8 @@ const navigate = useNavigate()
       airline: "SkyHigh Airlines",
       time: "6:00 AM",
       arrival: "9:00 PM",
-      from: 'LAX',
-      to: 'JFK',
+      from: 'Delhi',
+      to: 'Bhubaneswar',
       flightNo: "SH-276789",
       baggage: "1 Baggage",
       meal: "No Meal",
@@ -481,8 +481,8 @@ const navigate = useNavigate()
       airline: "FlyFast Airways",
       time: "8:00 AM",
       arrival: "11:30 AM",
-      from: 'LAX',
-      to: 'JFK',
+      from: 'Delhi',
+      to: 'Bhubaneswar',
       flightNo: "SH-276790",
       baggage: "2 Baggage",
       meal: "No Meal",
@@ -496,8 +496,8 @@ const navigate = useNavigate()
       airline: "AeroJet",
       time: "10:00 AM",
       arrival: "12:45 PM",
-      from: 'LAX',
-      to: 'JFK',
+      from: 'Delhi',
+      to: 'Bhubaneswar',
       flightNo: "SH-276791",
       baggage: "2 Baggage",
       meal: "In-Flight Meal",
@@ -511,8 +511,8 @@ const navigate = useNavigate()
       airline: "JetStream Aviation",
       time: "10:30 AM",
       arrival: "1:00 PM",
-      from: 'LAX',
-      to: 'JFK',
+      from: 'Delhi',
+      to: 'Bhubaneswar',
       flightNo: "SH-276792",
       baggage: "2 Baggage",
       meal: "In-Flight Meal",
@@ -526,8 +526,8 @@ const navigate = useNavigate()
       airline: "Nimbus Airlines",
       time: "11:00 AM",
       arrival: "2:00 PM",
-      from: 'LAX',
-      to: 'JFK',
+      from: 'Delhi',
+      to: 'Bhubaneswar',
       flightNo: "SH-276793",
       baggage: "1 Baggage",
       meal: "In-Flight Meal",
@@ -669,8 +669,8 @@ const navigate = useNavigate()
 
 // export default function FlightSchedule() {
 //   const [date, setDate] = useState("2028-07-01");
-//   const [fromLocation, setFromLocation] = useState("Los Angeles (LAX)");
-//   const [toLocation, setToLocation] = useState("New York (JFK)");
+//   const [fromLocation, setFromLocation] = useState("Los Angeles (Delhi)");
+//   const [toLocation, setToLocation] = useState("New York (Bhubaneswar)");
 
 //   const flights = [
 //     {
@@ -820,12 +820,12 @@ const navigate = useNavigate()
 //               </div>
 //               <div className="text-center">
 //                 <div className="text-xl font-bold">{flight.time}</div>
-//                 <div className="text-sm">LAX</div>
+//                 <div className="text-sm">Delhi</div>
 //               </div>
 //               <div className="text-gray-500 text-sm">{flight.duration} • {flight.transits}</div>
 //               <div className="text-center">
 //                 <div className="text-xl font-bold">{flight.arrival}</div>
-//                 <div className="text-sm">JFK</div>
+//                 <div className="text-sm">Bhubaneswar</div>
 //               </div>
 //               <div className="text-right">
 //                 <div className="text-xl font-bold text-yellow-600">{flight.price}/pax</div>
@@ -945,11 +945,11 @@ const navigate = useNavigate()
 //           <div className="bg-white p-4 rounded shadow mb-4 flex flex-wrap gap-4 items-end">
 //             <div className="flex flex-col w-40">
 //               <label className="text-xs mb-1">From</label>
-//               <input className="border px-2 py-1" placeholder="Los Angeles (LAX)" />
+//               <input className="border px-2 py-1" placeholder="Los Angeles (Delhi)" />
 //             </div>
 //             <div className="flex flex-col w-40">
 //               <label className="text-xs mb-1">To</label>
-//               <input className="border px-2 py-1" placeholder="New York (JFK)" />
+//               <input className="border px-2 py-1" placeholder="New York (Bhubaneswar)" />
 //             </div>
 //             <div className="flex flex-col w-40">
 //               <label className="text-xs mb-1">Departure Date</label>
@@ -1120,11 +1120,11 @@ const navigate = useNavigate()
 //         <div className="flex justify-between items-center mb-6 flex-wrap gap-4">
 //           <div className="flex flex-wrap gap-2 items-center">
 //             <select className="border px-3 py-2 rounded">
-//               <option>Los Angeles (LAX)</option>
+//               <option>Los Angeles (Delhi)</option>
 //               <option>San Francisco (SFO)</option>
 //             </select>
 //             <select className="border px-3 py-2 rounded">
-//               <option>New York (JFK)</option>
+//               <option>New York (Bhubaneswar)</option>
 //             </select>
 //             <input type="date" value="2028-07-01" onChange={() => {}} className="border px-3 py-2 rounded" />
 //             <select className="border px-3 py-2 rounded">
@@ -1157,12 +1157,12 @@ const navigate = useNavigate()
 //               </div>
 //               <div className="text-center">
 //                 <div className="text-xl font-bold">{flight.time}</div>
-//                 <div className="text-sm">LAX</div>
+//                 <div className="text-sm">Delhi</div>
 //               </div>
 //               <div className="text-gray-500 text-sm">{flight.duration} • {flight.transits}</div>
 //               <div className="text-center">
 //                 <div className="text-xl font-bold">{flight.arrival}</div>
-//                 <div className="text-sm">JFK</div>
+//                 <div className="text-sm">Bhubaneswar</div>
 //               </div>
 //               <div className="text-right">
 //                 <div className="text-xl font-bold text-yellow-600">{flight.price}/pax</div>
